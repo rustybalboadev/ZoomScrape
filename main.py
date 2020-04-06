@@ -11,7 +11,7 @@ if datetime.now().strftime('%I %p') == '12 AM':
     twint.run.Search(c)
     print("SHOWING ALL TWEETS SINCE 12 AM")
 else:
-    hours = int(input("How many hours behind to look for (1 is better because zooms don't last long will break if its 12 AM if it is 12 AM then input '0'): "))
+    hours = int(input("How many hours behind to look for (1 is better because zooms don't last long): "))
     output_name = input("Name of the outputted text file: ")
     content = input('Word to look for in tweet (Zoom or Zoom ID are good ones): ')
     hour = int(datetime.now().strftime('%I')) - hours
